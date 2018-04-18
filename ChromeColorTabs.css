@@ -1,0 +1,13 @@
+.tab-background { /* Background color of non-active tabs */
+    background: lightgrey;
+}
+
+
+.tabbrowser-tab:not([selected]):hover .tab-content { /* Highlight non-active tabs on mouseover */
+   background-color: #e8e8e8 !important;
+}
+
+
+.tabbrowser-tab .tab-label {  /*  Text color of non-active tabs */ 
+   color: black !important; 
+}
