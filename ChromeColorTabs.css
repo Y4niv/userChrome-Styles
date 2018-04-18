@@ -1,13 +1,35 @@
-.tab-background { /* Background color of non-active tabs */
+.tabbrowser-tab:not([selected]) .tab-content { /* Background color of non-selected tabs */
     background: lightgrey;
+    transition: background-color 0.3s ease-out !important;
 }
 
 
-.tabbrowser-tab:not([selected]):hover .tab-content { /* Highlight non-active tabs on mouseover */
+.tabbrowser-tab:not([selected]):hover .tab-content { /* Highlight non-selected tabs on mouseover */
    background-color: #e8e8e8 !important;
+   transition: background-color 0.3s !important;
+}
+
+
+.tabbrowser-tab[selected="true"] .tab-content { /* Background color of the selected tab */
+   background: #f9f9f9 !important;
+   transition: background-color 0.3s !important;
 }
 
 
 .tabbrowser-tab .tab-label {  /*  Text color of non-active tabs */ 
    color: black !important; 
 }
+
+
+.tabbrowser-tab .close-icon {  /* Design of close non-selected tab icon on mouseover */ 
+   fill: #000000 !important;
+ }
+
+
+ .tabbrowser-tab .close-icon:hover { /* Design of close tab icon on mouseover */ 
+   fill: white !important;
+   background-color: #c00 !important;
+   width: 19px !important;
+   margin: 1px;
+   border-radius: 30px;
+ }
