@@ -1,35 +1,60 @@
-.tabbrowser-tab:not([selected]) .tab-content { /* Background color of non-selected tabs */
+/* Background color of non-selected tabs */
+.tabbrowser-tab:not([selected]) .tab-content {
     background: lightgrey;
     transition: background-color 0.3s ease-out !important;
 }
 
-
-.tabbrowser-tab:not([selected]):hover .tab-content { /* Highlight non-selected tabs on mouseover */
+/* Highlight non-selected tabs on mouseover */
+.tabbrowser-tab:not([selected]):hover .tab-content {
    background-color: #e8e8e8 !important;
    transition: background-color 0.3s !important;
 }
 
-
-.tabbrowser-tab[selected="true"] .tab-content { /* Background color of the selected tab */
+/* Background color of the selected tab */
+.tabbrowser-tab[selected="true"] .tab-content {
    background: #f9f9f9 !important;
    transition: background-color 0.3s !important;
 }
 
-
-.tabbrowser-tab .tab-label {  /*  Text color of non-active tabs */ 
+/* Text color of non-active tabs */ 
+.tabbrowser-tab .tab-label {
    color: black !important; 
 }
 
-
-.tabbrowser-tab .close-icon {  /* Design of close non-selected tab icon on mouseover */ 
+/* Design of close non-selected tab icon on mouseover */
+.tabbrowser-tab .close-icon {
    fill: #000000 !important;
  }
 
-
- .tabbrowser-tab .close-icon:hover { /* Design of close tab icon on mouseover */ 
+/* Design of close tab icon on mouseover */
+ .tabbrowser-tab .close-icon:hover {
    fill: white !important;
    background-color: #c00 !important;
    width: 19px !important;
    margin: 1px;
    border-radius: 30px;
  }
+
+/* Background color of the new-tab button */
+.tabs-newtab-button {
+   background-color: lightgray !important;
+   transition: 0.2s ease-in;
+}
+
+/* Background color of the new-tab button icon */
+.tabs-newtab-button .toolbarbutton-icon {
+   background-color: lightgray !important;
+   transition: 0.2s ease-in;
+}
+
+/* Background color of the new-tab button on mouseover */
+.tabs-newtab-button:hover {
+   background-color: #e2e2e2 !important;
+   transition: 0.2s ease-out;
+}
+
+/* Background color of the new-tab button icon on mouseover */
+.tabs-newtab-button:hover .toolbarbutton-icon {
+   background-color: #e2e2e2 !important;
+   transition: 0.2s ease-out;
+}
